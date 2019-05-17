@@ -1,0 +1,17 @@
+import time
+
+
+def main():
+
+    # 通过for-in循环逐行读取
+    with open('0146.txt', mode='rt', encoding='utf-8') as f:
+        for line in f:
+            if(line.find('hugepages')>0):
+                print(line, end='')
+            time.sleep(0.01)
+    print()
+
+
+
+if __name__ == '__main__':
+    main()
